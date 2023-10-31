@@ -1,6 +1,6 @@
 # Ph-UI!!!
 
-**NAMES OF COLLABORATORS HERE**
+**Amber Tsao (ct649), Aris Huang (th625), Julia Lin (jtl236), Sherri Lin (yl3658), Wayne Cheng (cc2796), Ifeng Wu (iw84)**
 
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
@@ -11,7 +11,8 @@ For lab this week, we focus both on sensing, to bring in new modes of input into
 As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 2 ways you can do so:
 
 
-**\[recommended\]**Option 1: On the Pi, `cd` to your `Interactive-Lab-Hub`, pull the updates from upstream (class lab-hub) and push the updates back to your own GitHub repo. You will need the personal access token for this.
+Option 1: On the Pi, `cd` to your `Interactive-Lab-Hub`, pull the updates from upstream (class lab-hub) and push the updates back to your own GitHub repo. You will need the personal access token for this.
+
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
 pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2022
@@ -25,7 +26,6 @@ Option 2: On your own GitHub repo, [create pull request](https://github.com/FAR-
 Option 3: (preferred) use the Github.com interface to update the changes.
 
 ### Start brainstorming ideas by reading: 
-
 * [What do prototypes prototype?](https://www.semanticscholar.org/paper/What-do-Prototypes-Prototype-Houde-Hill/30bc6125fab9d9b2d5854223aeea7900a218f149)
 * [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. 
 * [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. 
@@ -41,9 +41,7 @@ Option 3: (preferred) use the Github.com interface to update the changes.
 * Cutting board
 * Cutting tools
 * Markers
-
 * New hardware for your kit will be handed out. Update your parts list. 
-
 
 (We do offer shared cutting board, cutting tools, and markers on the class cart during the lab, so do not worry if you don't have them!)
 
@@ -77,7 +75,6 @@ F) [Camera Test](#part-f)
 
 G) [Record the interaction](#part-g)
 
-
 ## The Report (Part 1: A-D, Part 2: E-F)
 
 ### Part A
@@ -88,14 +85,12 @@ We want to introduce you to the [capacitive sensor](https://learn.adafruit.com/a
 
 <p float="left">
 <img src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/226/medium640/MPR121_top_angle.jpg?1609282424" height="150" />
- 
 </p>
 
 Plug in the capacitive sensor board with the QWIIC connector. Connect your Twizzlers with either the copper tape or the alligator clips (the clips work better). Install the latest requirements from your working virtual environment:
 
 ```
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ pip install -r requirements.txt
-
 ```
 
 <img src="https://media.discordapp.net/attachments/679721816318803975/823299613812719666/PXL_20210321_205742253.jpg" width=400>
@@ -113,9 +108,8 @@ Twizzler 6 touched!
 #### Light/Proximity/Gesture sensor (APDS-9960)
 
 We here want you to get to know this awesome sensor [Adafruit APDS-9960](https://www.adafruit.com/product/3595). It is capable of sensing proximity, light (also RGB), and gesture! 
- 
+
 <img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" width=200>
- 
 
 Connect it to your pi with Qwiic connector and try running the three example scripts individually to see what the sensor is capable of doing!
 
@@ -137,8 +131,6 @@ You can go the the [Adafruit GitHub Page](https://github.com/adafruit/Adafruit_C
 A rotary encoder is an electro-mechanical device that converts the angular position to analog or digital output signals. The [Adafruit rotary encoder](https://www.adafruit.com/product/4991#technical-details) we ordered for you came with separate breakout board and encoder itself, that is, they will need to be soldered if you have not yet done so! We will be bringing the soldering station to the lab class for you to use, also, you can go to the MakerLAB to do the soldering off-class. Here is some [guidance on soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering/preparation) from Adafruit. When you first solder, get someone who has done it before (ideally in the MakerLAB environment). It is a good idea to review this material beforehand so you know what to look at.
 
 <p float="left">
-
-   
 <img src="https://cdn-shop.adafruit.com/970x728/377-02.jpg" height="200" />
 <img src="https://cdn-shop.adafruit.com/970x728/4991-09.jpg" height="200">
 </p>
@@ -152,7 +144,6 @@ Connect it to your pi with Qwiic connector and try running the example script, i
 You can go to the [Adafruit Learn Page](https://learn.adafruit.com/adafruit-i2c-qt-rotary-encoder/python-circuitpython) to learn more about the sensor! The sensor actually comes with an LED (neo pixel): Can you try lighting it up? 
 
 #### Joystick (optional)
-
 
 A [joystick](https://www.sparkfun.com/products/15168) can be used to sense and report the input of the stick for it pivoting angle or direction. It also comes with a button input!
 
@@ -170,12 +161,10 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joyst
 
 #### Distance Sensor
 
-
 Earlier we have asked you to play with the proximity sensor, which is able to sense objects within a short distance. Here, we offer [Sparkfun Proximity Sensor Breakout](https://www.sparkfun.com/products/15177), With the ability to detect objects up to 20cm away.
 
 <p float="left">
 <img src="https://cdn.sparkfun.com//assets/parts/1/3/5/9/2/15177-SparkFun_Proximity_Sensor_Breakout_-_20cm__VCNL4040__Qwiic_-01.jpg" height="200" />
-
 </p>
 
 Connect it to your pi with Qwiic connector and try running the example script to see how it works!
@@ -184,29 +173,50 @@ Connect it to your pi with Qwiic connector and try running the example script to
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python qwiic_distance.py
 ```
 
-You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples
+You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples!
 
 ### Part C
 ### Physical considerations for sensing
 
-
 Usually, sensors need to be positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
-
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+1. Bug Detector, 2. Guitar Player, 3. Sight Detector [ordered from left to right, top to bottom]
+![](https://hackmd.io/_uploads/BJRi1nVWa.jpg)
+
+4) Question-Answer Competition
+![](https://hackmd.io/_uploads/H1Q3ZRNZT.png)
+
+5. Coffee Art Visualization
+![](https://hackmd.io/_uploads/ry_Pl3E-a.png)
+
+
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+For the electric shock sketch, we might want to think about how we can place our sensor to make the sensor less noticeable for the bugs to detect. 
+- Need to make the sensor less noticeable -> use thin cardboard for design 
+
+As for guitar string, we might want to explore how we can place our sensors on strings or other mediums. If the sensors are placed too close to one another, we might trigger unwanted signals. 
+- Need to consider the relative placement of the string (ex. sensors)
+
+
+As for Question-Answer Competition, we need to think about the length of the cables attached to the capacitive sensor.
+- Need to consider are we using hard cable or soft strings to attach to the capacitive sensor
+
+
+Lastly, for the coffee art visualization, the portion for the make a gesture entails users holding a coffee cup and make it visually accessible to a web cam placed in a distance. Then, the visual information captured will be displayed from an exterior screen. 
+- How are we capturing the gestures with the web cam is something that we need to consider. The angle of visualization matters too. So, delineating the physical placement of the web cam is crucial for this design.
+
 **\*\*\*Pick one of these designs to prototype.\*\*\***
+We are moving forward with the guitar idea as our prototype. 
 
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
 
 
-
 Here is a Pi with a paper faceplate on it to turn it into a display interface:
-
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/paper_if.png?raw=true"  width="250"/>
 
@@ -217,12 +227,10 @@ Here is another prototype for a paper display:
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/b_box.png?raw=true"  width="250"/>
 
-
 Your kit includes these [SparkFun Qwiic OLED screens](https://www.sparkfun.com/products/17153). These use less power than the MiniTFTs you have mounted on the GPIO pins of the Pi, but, more importantly, they can be more flexibly mounted elsewhere on your physical interface. The way you program this display is almost identical to the way you program a  Pi display. Take a look at `oled_test.py` and some more of the [Adafruit examples](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/tree/master/examples).
 
 <p float="left">
 <img src="https://cdn.sparkfun.com//assets/parts/1/6/1/3/5/17153-SparkFun_Qwiic_OLED_Display__0.91_in__128x32_-01.jpg" height="200" />
-
 </p>
 
 
@@ -243,16 +251,59 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+1. Bug Detector
+![](https://hackmd.io/_uploads/HkVjxRNb6.png)
+
+2. Guitar Player
+![](https://hackmd.io/_uploads/H1ZqA2N-T.jpg)
+
+3. Sight Detector
+![](https://hackmd.io/_uploads/HJuqi6NZa.jpg)
+
+
+4. Question-Answer Competition
+![](https://hackmd.io/_uploads/SyE0-04Wa.png)
+
+
+5. Coffee Art Visualization
+![](https://hackmd.io/_uploads/SkXZ-0EW6.png)
+
+
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+1) How can we electrocute bugs using our sensor. This is an important consideration we have to think about.  
+2) If we need to press certain chord, we might have to precompute different combinations of string pressed in order to produce the right sound. 
+3) We will need to ensure the accuracy of sensor detecting the region of what people see on the screen. For some tasks when user zoom out the screen, it would be difficult to identify the line of the user is reading.
+4) We need to ensure buttons touch the capbles when pressed and detach when released precisely. This will require physical prototyping for experiment.
+5) If the hand-waving speed to create the gesture is too fast, the web camera module may not capture the precise gesture. We need to try the web camera.
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+We have chosen Guitar Player's design to integrate into our prototype.
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
+Rationale: In our design, for the size (width + height) of the guitar neck, we made sure our prototype is as realistic as it can be by measuring that of the actual guitar. Therefore, the measurement resembled that of the actual, real life guitar. 
+
 Build a cardboard prototype of your design.
+
+![](https://hackmd.io/_uploads/H1ZeiaEZa.jpg)
+
+![](https://hackmd.io/_uploads/r1Uls6EZ6.jpg)
+
+![](https://hackmd.io/_uploads/rknlj6N-a.jpg)
+
+![](https://hackmd.io/_uploads/B1I4r04Wa.jpg)
+*Due to lack of alligator cord, we will eventually have 6 in total
+
+
+[Video Demonstration](https://drive.google.com/file/d/1b6PvNt_pQ_SpFkxjWp-AeBqx6HSLBQua/view?usp=sharing)
+
 
 
 **\*\*\*Document your rough prototype.\*\*\***
+For this setup, we used conductive copper tape as our strings (6 in total) and attached them to the cardboard, which serves as our "guitar neck". Once the user presses a specific cord/string, the musical note will be played correspondingly from the speaker attached to the back of the guitar neck. Additionally, the music note played will also get visually rendered from an external screen connected to the speaker.
+
+
 
 
 LAB PART 2
@@ -263,11 +314,9 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 
 ### Part E (Optional)
 ### Servo Control with Joystick
-
 > **_NOTE:_**  Not in the kit yet.
 
 In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which is included in your kit. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
-
 
 <img src="Servo_Setup.jpg" width="400"/>
 
@@ -279,9 +328,7 @@ In this exercise, we will be using the nice [ServoKit library](https://learn.ada
 
 A servo motor is a rotary actuator or linear actuator that allows for precise control of angular or linear position. The position of a servo motor is set by the width of an electrical pulse, that is, we can use PWM (pulse-width modulation) to set and control the servo motor position. You can read [this](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn a bit more about how exactly a servo motor works.
 
-
 Now that you have a basic idea of what a servo motor is, look into the script `servo_test.py` we provide. In line 14, you should see that we have set up the min_pulse and max_pulse corresponding to the servo turning 0 - 180 degrees. Try running the servo example code now and see what happens:
-
 
 ```
 (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python servo_test.py
@@ -294,7 +341,6 @@ It is also possible to control the servo using the sensors mentioned in as in pa
 You can then call whichever control you like rather than setting a fixed value for the servo. For more information on controlling Qwiic devices, Sparkfun has several python examples, such as [this](https://learn.sparkfun.com/tutorials/qwiic-joystick-hookup-guide/all#python-examples).
 
 We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
-
 
 ### Part F (Optional)
 ### Camera
@@ -318,11 +364,23 @@ The following resources are good starts on how to stream video:
 * [OpenCV – Stream video to web browser/HTML page](https://pyimagesearch.com/2019/09/02/opencv-stream-video-to-web-browser-html-page/)
 * [Live video streaming over network with OpenCV and ImageZMQ](https://pyimagesearch.com/2019/04/15/live-video-streaming-over-network-with-opencv-and-imagezmq/)
 ### Part G
-
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
+![](https://hackmd.io/_uploads/HJDDUf5bT.jpg)
+![](https://hackmd.io/_uploads/SyKgOfqbT.jpg)
+
+
 * "Works like": shows what the device can do
+
+First Iteration:
+[First Conceptual Video (Proof of Concept)](https://drive.google.com/file/d/1LcVcLfeNc05QQsU7a4y7S96cXneQIsF7/view?usp=sharing)
+
+
 * "Acts like": shows how a person would interact with the device
 
+Final Outcome: 
+[Final Video Demo - Stroking Guitar](https://drive.google.com/file/d/1097kYwMXeLtI7FALEjN0PABsxGslsk2G/view?usp=sharing)
+[Final Video Demo - Volume Adjustment](https://drive.google.com/file/d/194OoS1-NccoPSuwAX14XU9BKNmPbSwrb/view?usp=sharing)
+* The volume adjustment video demonstrates lowering volume, but one can also increase volume through adjustment
